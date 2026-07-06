@@ -118,3 +118,86 @@ int main() {
 
     return 0;
 }
+
+
+
+1. C Program to Check Vowel or Consonant
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter an alphabet: ");
+    scanf("%c", &ch);
+
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
+       ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+    {
+        printf("%c is a Vowel.", ch);
+    }
+    else
+    {
+        printf("%c is a Consonant.", ch);
+    }
+
+    return 0;
+}
+
+2. C Program to Convert Days into Years, Weeks, and Days
+
+#include <stdio.h>
+
+int main()
+{
+    int days, years, weeks, remainingDays;
+
+    printf("Enter total days: ");
+    scanf("%d", &days);
+
+    years = days / 365;
+    days = days % 365;
+
+    weeks = days / 7;
+    remainingDays = days % 7;
+
+    printf("Years = %d\n", years);
+    printf("Weeks = %d\n", weeks);
+    printf("Days = %d\n", remainingDays);
+
+    return 0;
+}
+
+3. C Program to Print from 1 to 5
+#include <stdio.h>
+
+int main()
+{
+    int i;
+
+    for(i = 1; i <= 5; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+    
+
+3. C Program to Print from 5 to 1
+
+  #include <stdio.h>
+
+int main()
+{
+    int i;
+
+    for(i = 5; i >= 1; i--)
+    {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}  
